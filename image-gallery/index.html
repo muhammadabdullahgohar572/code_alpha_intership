@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Image Gallery</title>
+    <!-- Use Inter font for a modern look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Photography Portfolio</h1>
+        <p>A collection of beautiful moments captured around the world.</p>
+    </header>
+
+    <main class="gallery-container">
+        <!-- Gallery Grid -->
+        <div class="gallery" id="gallery">
+            <div class="gallery-item" data-index="0">
+                <img src="https://picsum.photos/id/1015/800/600" alt="River in Mountains">
+            </div>
+            <div class="gallery-item" data-index="1">
+                <img src="https://picsum.photos/id/1016/800/600" alt="Mountain Canyon">
+            </div>
+            <div class="gallery-item" data-index="2">
+                <img src="https://picsum.photos/id/1018/800/600" alt="Desert Mountain">
+            </div>
+            <div class="gallery-item" data-index="3">
+                <img src="https://picsum.photos/id/1019/800/600" alt="Coastline view">
+            </div>
+            <div class="gallery-item" data-index="4">
+                <img src="https://picsum.photos/id/1020/800/600" alt="Bear resting">
+            </div>
+            <div class="gallery-item" data-index="5">
+                <img src="https://picsum.photos/id/1021/800/600" alt="Forest scene">
+            </div>
+            <div class="gallery-item" data-index="6">
+                <img src="https://picsum.photos/id/1022/800/600" alt="Aurora Borealis">
+            </div>
+            <div class="gallery-item" data-index="7">
+                <img src="https://picsum.photos/id/1029/800/600" alt="Park setting">
+            </div>
+            <div class="gallery-item" data-index="8">
+                <img src="https://picsum.photos/id/1036/800/600" alt="Winter landscape">
+            </div>
+        </div>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <button class="nav-btn prev-btn">&#10094;</button>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Lightbox Image">
+        </div>
+        <button class="nav-btn next-btn">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
